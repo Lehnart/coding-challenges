@@ -7,4 +7,4 @@ for coin in coins:
     for j in range(coin, target + 1):
         ways[j] += ways[j - coin]
 
-print("Solution : "+ str(ways[-1]))
+print("Solution : " + str(ways[-1]))
