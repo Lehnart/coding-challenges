@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62cce842-4da3-4ff3-bbab-41a2bdeaec55" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/euler/38.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/euler/39.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/euler/40.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/euler/41.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/euler/42.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/euler/43.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/euler/44.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/euler/45.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/euler/words.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,73 +38,79 @@
     <SUITE FILE_PATH="coverage/EulerProject$38.coverage" NAME="38 Coverage Results" MODIFIED="1526243440342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/euler" />
     <SUITE FILE_PATH="coverage/EulerProject$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1525780475458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/euler/2" />
     <SUITE FILE_PATH="coverage/EulerProject$11.coverage" NAME="11 Coverage Results" MODIFIED="1525801397543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/euler" />
+    <SUITE FILE_PATH="coverage/EulerProject$43.coverage" NAME="43 Coverage Results" MODIFIED="1528024420626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/euler" />
     <SUITE FILE_PATH="coverage/EulerProject$34.coverage" NAME="34 Coverage Results" MODIFIED="1526225226999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/euler" />
     <SUITE FILE_PATH="coverage/EulerProject$18.coverage" NAME="18 Coverage Results" MODIFIED="1525863606271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/euler" />
     <SUITE FILE_PATH="coverage/EulerProject$31.coverage" NAME="31 Coverage Results" MODIFIED="1525949461990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/euler" />
     <SUITE FILE_PATH="coverage/EulerProject$39.coverage" NAME="39 Coverage Results" MODIFIED="1526245347799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/euler" />
     <SUITE FILE_PATH="coverage/EulerProject$8.coverage" NAME="8 Coverage Results" MODIFIED="1525786026507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/euler" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="35.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euler/35.py">
+      <file leaf-file-name="41.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/euler/41.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state>
+              <caret selection-end-line="12" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="36.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euler/36.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="64" selection-start-line="3" selection-start-column="64" selection-end-line="3" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="37.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euler/37.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="38.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euler/38.py">
+      <file leaf-file-name="42.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/euler/42.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="39.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/euler/39.py">
+      <file leaf-file-name="43.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/euler/43.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="40.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/euler/40.py">
+      <file leaf-file-name="44.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/euler/44.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="51">
+              <caret line="4" selection-start-line="4" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/2065210896/builtins.py">
+      <file leaf-file-name="45.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/euler/45.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="517" column="4" selection-start-line="517" selection-start-column="4" selection-end-line="517" selection-end-column="4" />
+            <state relative-caret-position="68">
+              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,6 +127,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>range</find>
+      <find>isprime</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,6 +181,12 @@
         <option value="$PROJECT_DIR$/euler/38.py" />
         <option value="$PROJECT_DIR$/euler/39.py" />
         <option value="$PROJECT_DIR$/euler/40.py" />
+        <option value="$PROJECT_DIR$/euler/41.py" />
+        <option value="$PROJECT_DIR$/euler/words.txt" />
+        <option value="$PROJECT_DIR$/euler/42.py" />
+        <option value="$PROJECT_DIR$/euler/43.py" />
+        <option value="$PROJECT_DIR$/euler/44.py" />
+        <option value="$PROJECT_DIR$/euler/45.py" />
       </list>
     </option>
   </component>
@@ -183,7 +199,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="140" />
     <option name="y" value="-10" />
     <option name="width" value="1400" />
@@ -195,7 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,6 +227,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,6 +235,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -232,8 +249,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.40">
-    <configuration name="36" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.45">
+    <configuration name="41" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="EulerProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,13 +263,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/euler/36.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/euler/41.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="37" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="42" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="EulerProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -265,13 +282,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/euler/37.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/euler/42.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="38" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="43" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="EulerProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -284,13 +301,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/euler/38.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/euler/43.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="39" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="44" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="EulerProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,13 +320,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/euler/39.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/euler/44.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="40" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="45" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="EulerProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -322,7 +339,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/euler/40.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/euler/45.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -348,19 +365,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.36" />
-      <item itemvalue="Python.37" />
-      <item itemvalue="Python.38" />
-      <item itemvalue="Python.39" />
-      <item itemvalue="Python.40" />
+      <item itemvalue="Python.41" />
+      <item itemvalue="Python.42" />
+      <item itemvalue="Python.43" />
+      <item itemvalue="Python.44" />
+      <item itemvalue="Python.45" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.40" />
-        <item itemvalue="Python.39" />
-        <item itemvalue="Python.38" />
-        <item itemvalue="Python.37" />
-        <item itemvalue="Python.36" />
+        <item itemvalue="Python.45" />
+        <item itemvalue="Python.44" />
+        <item itemvalue="Python.43" />
+        <item itemvalue="Python.42" />
+        <item itemvalue="Python.41" />
       </list>
     </recent_temporary>
   </component>
@@ -406,34 +423,43 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="6" side_tool="true" visible="true" weight="0.24295302" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5013423" side_tool="true" weight="0.33519554" />
+      <window_info anchor="right" x="0" y="0" width="337" height="678" id="Documentation" order="6" sideWeight="0.5021008" side_tool="true" weight="0.3295302" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32962447" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32962447" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33657858" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32962447" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4979253" visible="true" weight="0.27181208" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.33519554" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32960895" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4979253" visible="true" weight="0.20872483" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.49789914" weight="0.3295302" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.49789914" weight="0.3295302" />
       <window_info id="Structure" order="2" sideWeight="0.5020747" side_tool="true" weight="0.24966443" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39499304" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" weight="0.32962447" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39385474" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" weight="0.32962447" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,8 +529,13 @@
           <line>13</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/euler/43.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="40" />
+      <option name="time" value="42" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -549,43 +580,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/simpy/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/simpy/core.py" />
-    <entry file="file://$PROJECT_DIR$/euler/3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/euler/4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/euler/5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/euler/6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/euler/7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/euler/8.txt" />
     <entry file="file://$PROJECT_DIR$/euler/8.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -734,13 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/euler/names.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46420" lean-forward="true" selection-start-column="46420" selection-end-column="46420" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/euler/22.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -868,7 +855,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/2065210896/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="8789">
           <caret line="517" column="4" selection-start-line="517" selection-start-column="4" selection-end-line="517" selection-end-column="4" />
         </state>
       </provider>
@@ -889,8 +876,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/euler/40.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/euler/words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret column="16345" selection-start-column="16345" selection-end-column="16345" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/euler/names.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret column="46420" selection-start-column="46420" selection-end-column="46420" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/typing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39083">
+          <caret line="2306" column="8" selection-start-line="2306" selection-start-column="8" selection-end-line="2306" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/euler/42.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/euler/41.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/euler/43.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/euler/44.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" selection-start-line="4" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/euler/45.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
