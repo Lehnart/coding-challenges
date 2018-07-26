@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62cce842-4da3-4ff3-bbab-41a2bdeaec55" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/euler/52.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/euler/53.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/euler/53.py" beforeDir="false" afterPath="$PROJECT_DIR$/euler/53.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,7 +82,11 @@
       </file>
       <file leaf-file-name="53.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/euler/53.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
@@ -456,9 +458,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32962447" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.33379695" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.33379695" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32960895" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4979253" visible="true" weight="0.14362416" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4979253" visible="true" weight="0.14362416" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" sideWeight="0.49789914" weight="0.3295302" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -560,17 +562,17 @@
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
       <expression>
-        <expression-string />
+        <expression-string>p == 120</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>num == 49 and den == 98</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>if num == 49 and den == 98</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -592,7 +594,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>spiral[size - 1, i]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -969,7 +971,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/euler/53.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
