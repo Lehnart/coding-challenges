@@ -1,3 +1,6 @@
+import os
+
+
 def triangle(n):
     return int(n * (n + 1) / 2)
 
@@ -48,19 +51,29 @@ def dict_from_two_first_letters(list_n):
     return dict
 
 
+def next_good_numbers(good_numbers, next_number_dict):
+    next_good_numbers = []
+
+    for good_number in good_numbers:
+        n = good_number[0]
+        n_history = good_number[1]
+        n_end_str = str(n)[2:]
+        if n_end_str in next_number_dict:
+            for next_n in next_number_dict[n_end_str]:
+                try:
+                    next_good_numbers.append((next_n, (*n_history, next_n)))
+                except:
+                    next_good_numbers.append((next_n, (n_history, next_n)))
+
+    return next_good_numbers
+
+
 triangles = fill_list(triangle)
 squares = fill_list(square)
 pentagonals = fill_list(pentagonal)
 hexagonals = fill_list(hexagonal)
 heptagonals = fill_list(heptagonal)
 octogonals = fill_list(octogonal)
-
-print(triangles)
-print(squares)
-print(pentagonals)
-print(hexagonals)
-print(heptagonals)
-print(octogonals)
 
 triangles_begin_str = dict_from_two_first_letters(triangles)
 squares_begin_str = dict_from_two_first_letters(squares)
@@ -69,73 +82,31 @@ hexagonals_begin_str = dict_from_two_first_letters(hexagonals)
 heptagonals_begin_str = dict_from_two_first_letters(heptagonals)
 octogonals_begin_str = dict_from_two_first_letters(octogonals)
 
-good_numbers = {}
-for triangle in triangles:
-    triangle_str = str(triangle)
-    triangle_end_str = triangle_str[2:]
-    if triangle_end_str in squares_begin_str:
-        if triangle not in good_numbers:
-            good_numbers[triangle] = []
-        good_numbers[triangle].extend(squares_begin_str[triangle_end_str])
+lists = [
+    (triangles, triangles_begin_str),
+    (squares, squares_begin_str),
+    (pentagonals, pentagonals_begin_str),
+    (hexagonals, hexagonals_begin_str),
+    (heptagonals, heptagonals_begin_str),
+    (octogonals, octogonals_begin_str)
+]
 
-next_good_numbers = {}
-for triangle in good_numbers.keys():
-    for square in good_numbers[triangle]:
-        square_str = str(square)
-        square_end_str = square_str[2:]
-        if square_end_str in pentagonals_begin_str:
-            if (triangle, square) not in next_good_numbers:
-                next_good_numbers[(triangle, square)] = []
-            next_good_numbers[(triangle, square)].extend(pentagonals_begin_str[square_end_str])
+from itertools import permutations
 
-good_numbers = next_good_numbers
-next_good_numbers = {}
-for (triangle, square) in good_numbers.keys():
-    for pentagonal in good_numbers[(triangle, square)]:
-        pentagonal_str = str(pentagonal)
-        pentagonal_end_str = pentagonal_str[2:]
-        if pentagonal_end_str ==str(triangle)[:2]:
-            print([triangle,square,pentagonal])
+for permutation in permutations(lists, 6):
+    good_numbers = [(n, (n)) for n in permutation[0][0]]
+    permutation = (permutation[1:])
+    for l in permutation:
+        good_numbers = next_good_numbers(good_numbers, l[1])
 
+    new_good_numbers = []
+    for good_number in good_numbers :
+        if str(good_number[0])[2:] == str(good_number[1][0])[:2]:
+            new_good_numbers.append(good_number)
+    good_numbers = new_good_numbers
 
-good_numbers = next_good_numbers
-next_good_numbers = {}
-for (triangle, square) in good_numbers.keys():
-    for pentagonal in good_numbers[(triangle, square)]:
-        pentagonal_str = str(pentagonal)
-        pentagonal_end_str = pentagonal_str[2:]
-        if pentagonal_end_str in hexagonals_begin_str:
-            if (triangle, square, pentagonal) not in next_good_numbers:
-                next_good_numbers[(triangle, square, pentagonal)] = []
-            next_good_numbers[(triangle, square, pentagonal)].extend(hexagonals_begin_str[pentagonal_end_str])
-
-good_numbers = next_good_numbers
-next_good_numbers = {}
-for (triangle, square, pentagonal) in good_numbers.keys():
-    for hexagonal in good_numbers[(triangle, square, pentagonal)]:
-        hexagonal_str = str(hexagonal)
-        hexagonal_end_str = hexagonal_str[2:]
-        if hexagonal_end_str in heptagonals_begin_str:
-            if (triangle, square, pentagonal, hexagonal) not in next_good_numbers:
-                next_good_numbers[(triangle, square, pentagonal, hexagonal)] = []
-            next_good_numbers[(triangle, square, pentagonal, hexagonal)].extend(
-                heptagonals_begin_str[hexagonal_end_str])
-
-good_numbers = next_good_numbers
-next_good_numbers = {}
-for (triangle, square, pentagonal, hexagonal) in good_numbers.keys():
-    for heptagonal in good_numbers[(triangle, square, pentagonal, hexagonal)]:
-        heptagonal_str = str(heptagonal)
-        heptagonal_end_str = heptagonal_str[2:]
-        if heptagonal_end_str in octogonals_begin_str:
-            if (triangle, square, pentagonal, hexagonal, heptagonal) not in next_good_numbers:
-                next_good_numbers[(triangle, square, pentagonal, hexagonal, heptagonal)] = []
-            next_good_numbers[(triangle, square, pentagonal, hexagonal, heptagonal)].extend(octogonals_begin_str[
-                                                                                                heptagonal_end_str])
-
-for numbers in next_good_numbers.keys():
-    all_numbers = []
-    all_numbers.extend(numbers)
-    all_numbers.extend(next_good_numbers[numbers])
-    print(all_numbers)
-    print("Solution :" + str(sum(all_numbers)))
+    if len(good_numbers) > 0 :
+        all_numbers = [ n for n in good_numbers[0][1]]
+        print(all_numbers)
+        print("Solution :" + str(sum(all_numbers)))
+        os._exit(0)
