@@ -1,44 +1,63 @@
 import math
 
-abcs = {}
-for m in range(1,10) :
-    for n in range(1,m):
-        a = m**2 - n**2
-        b = 2*m*n
-        c = m**2 + n**2
+pythagoreans = {}
+
+max_m = 4000
+for m in range(1,max_m) :
+
+    for n in range(1,m) :
+        for k in range(1,max_m):
+            a,b,c = (k*(m**2 - n**2),k*(2*m*n), k*(m**2 + n**2))
+            if a>max_m or b>max_m or c>max_m:
+                break
+
+            l = [a,b,c]
+            l.sort()
+            a,b,c = l
+
+            if a not in pythagoreans : pythagoreans[a] = set()
+            pythagoreans[a].add(b)
+
+            if b not in pythagoreans: pythagoreans[b] = set()
+            pythagoreans[b].add(a)
 
 
-
-        l = [a,b,c]
-        l.sort()
-        print (l)
-        if a not in abcs :
-            abcs[a] = {}
-        if b not in abcs[a] :
-            abcs[a][b] = []
-        abcs[a][b].append(c)
-
-
-
-m = 50
+m = 1
 count = 0
-for a in range(1,m+1):
-    for b in range(a,m+1):
 
-        if b not in abcs[a] : continue
-        for c in range(b,m+1):
+while True:
+    m+=1
+    c = m
+    if c in pythagoreans :
+        for a_plus_b in pythagoreans[c] :
+            if a_plus_b < c :
+                for b in range(1,int(a_plus_b/2)+1) :
+                    a = a_plus_b - b
+                    l1 = math.sqrt( a**2 + (b+c)**2 )
+                    l2 = math.sqrt( b**2 + (a+c)**2 )
+                    l3 = math.sqrt( c**2 + (a+b)**2 )
+
+                    l = min(l1,l2,l3)
+                    if l == l3 :
+                        count+=1
 
 
-            #print("a " + str(a) + " b " + str(b) + " c " + str(c))
+            else :
+                for b in range(1,int(a_plus_b/2)+1) :
+                    a = a_plus_b - b
 
-            if {a, b, c} not in abcs : continue
+                    if a > c or b > c :
+                        continue
 
-            l1 = math.sqrt( a**2 + (b+c)**2 )
-            l2 = math.sqrt( b**2 + (a+c)**2 )
-            l3 = math.sqrt( c**2 + (a+b)**2 )
+                    l1 = math.sqrt( a**2 + (b+c)**2 )
+                    l2 = math.sqrt( b**2 + (a+c)**2 )
+                    l3 = math.sqrt( c**2 + (a+b)**2 )
 
-            l = min(l1,l2,l3)
-            if l == int(l) :
-                count += 1
+                    l = min(l1,l2,l3)
+                    if l == l3 :
+                        count+=1
 
-print("m " + str(m) + " count " + str(count))
+    if count > 1000000 : break
+
+
+print("Solution :" + str(m))
