@@ -21,13 +21,14 @@ number_str = "\
 71636269561882670428252483600823257530420752963450\
 "
 
-solution = 0
-for index_str in range(len(number_str)):
-    if index_str + 13 >= len(number_str):
-        continue
-    temp = 1
-    for digit in number_str[index_str:index_str + 13]:
-        temp *= int(digit)
-    solution = (temp if temp > solution else solution)
 
-print("Solution : " + str(solution))
+def algo():
+    solution = 0
+    for index_str in range(len(number_str)):
+        if index_str + 13 >= len(number_str):
+            continue
+        temp = 1
+        for digit in number_str[index_str:index_str + 13]:
+            temp *= int(digit)
+        solution = (temp if temp > solution else solution)
+    return solution
