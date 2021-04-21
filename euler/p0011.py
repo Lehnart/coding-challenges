@@ -26,8 +26,6 @@ grid_str = "\
 grid_list = [[int(l) for l in line.split(" ")] for line in grid_str.split('\n')]
 grid_array = np.array(grid_list)
 
-solution = 0
-
 
 def max_product(sequence, solution):
     for index in range(len(sequence)):
@@ -38,21 +36,24 @@ def max_product(sequence, solution):
             solution = temp
     return solution
 
-# find max 4 adjacent digit product in line
-for row_index in range(0, grid_array.shape[0]):
-    row = grid_array[row_index, :]
-    solution  = max_product(row, solution)
 
-# find max 4 adjacent digit product in column
-for col_index in range(0, grid_array.shape[1]):
-    col = grid_array[:, col_index]
-    solution = max_product(col, solution)
+def algo():
+    solution = 0
 
-# find max 4 adjacent digit in diagonals
-for row_index in range(0, grid_array.shape[0]):
-    up_right_diag = [grid_array[row_index - i, i] for i in range(0, row_index)]
-    down_right_diag = [grid_array[row_index + i, i] for i in range(0, grid_array.shape[0] - row_index)]
-    solution = max_product(up_right_diag, solution)
-    solution = max_product(down_right_diag, solution)
+    # find max 4 adjacent digit product in line
+    for row_index in range(0, grid_array.shape[0]):
+        row = grid_array[row_index, :]
+        solution = max_product(row, solution)
 
-print("Solution : " + str(solution))
+    # find max 4 adjacent digit product in column
+    for col_index in range(0, grid_array.shape[1]):
+        col = grid_array[:, col_index]
+        solution = max_product(col, solution)
+
+    # find max 4 adjacent digit in diagonals
+    for row_index in range(0, grid_array.shape[0]):
+        up_right_diag = [grid_array[row_index - i, i] for i in range(0, row_index)]
+        down_right_diag = [grid_array[row_index + i, i] for i in range(0, grid_array.shape[0] - row_index)]
+        solution = max_product(up_right_diag, solution)
+        solution = max_product(down_right_diag, solution)
+    return solution
