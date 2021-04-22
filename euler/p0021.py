@@ -12,6 +12,5 @@ def algo():
     solution = 0
     for n in range(10000):
         if is_amicable(n):
-            print(n)
             solution += n
     return solution

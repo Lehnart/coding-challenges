@@ -1,7 +1,7 @@
 import unittest
 
 from euler import p0001, p0002, p0003, p0004, p0005, p0006, p0007, p0008, p0009, p0010, p0011, p0012, p0013, p0014, \
-    p0015, p0016, p0017, p0018, p0019, p0020, p0021
+    p0015, p0016, p0017, p0018, p0019, p0020, p0021, p0022, p0023, p0024, p0025, p0026, p0027
 
 
 class TestEuler(unittest.TestCase):
@@ -68,3 +68,21 @@ class TestEuler(unittest.TestCase):
 
     def test_0021(self):
         self.assertEqual(p0021.algo(), 31626)
+
+    def test_0022(self):
+        self.assertEqual(p0022.algo(), 871198282)
+
+    def test_0023(self):
+        self.assertEqual(p0023.algo(), 4179871)
+
+    def test_0024(self):
+        self.assertEqual(p0024.algo(), 2783915460)
+
+    def test_0025(self):
+        self.assertEqual(p0025.algo(), 4782)
+
+    def test_0026(self):
+        self.assertEqual(p0026.algo(), 983)
+
+    def test_0027(self):
+        self.assertEqual(p0027.algo(), -59231)
