@@ -15,12 +15,14 @@ triangle_str = "\
 63 66 04 68 89 53 67 30 73 16 69 87 40 31\n\
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23"
 
-triangle = [ [ int(c) for c in line.split(" ")] for line in triangle_str.split("\n")]
-travel_distance = []
-for line in triangle[::-1]:
-    if not travel_distance:
-        travel_distance = line
-    else:
-        for i in range(len(line)):
-            travel_distance[i] = line[i] + max(travel_distance[i], travel_distance[i + 1])
-print("Solution : " + str(travel_distance[0]))
+
+def algo():
+    triangle = [[int(c) for c in line.split(" ")] for line in triangle_str.split("\n")]
+    travel_distance = []
+    for line in triangle[::-1]:
+        if not travel_distance:
+            travel_distance = line
+        else:
+            for i in range(len(line)):
+                travel_distance[i] = line[i] + max(travel_distance[i], travel_distance[i + 1])
+    return travel_distance[0]
