@@ -1,5 +1,5 @@
+from euler.primes import primes_below
 
 
 def algo():
-    #return sum(primes_below(2000000))
-    return 0
+    return sum(primes_below(2000000))
