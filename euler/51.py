@@ -1,4 +1,5 @@
 from itertools import combinations, product
+
 from sympy.ntheory import isprime
 
 n_digits = 1
@@ -28,14 +29,14 @@ while True:
 
                 if number_str[-1] == 'X':
                     continue
-                if number_str[-1] != 'X' and int(number_str[-1]) % 2 == 0 :
+                if number_str[-1] != 'X' and int(number_str[-1]) % 2 == 0:
                     continue
 
                 not_prime_count = 0
                 primes = []
                 for digit in "0123456789":
 
-                    if digit == '0' and number_str[0] == 'X' :
+                    if digit == '0' and number_str[0] == 'X':
                         continue
 
                     number = int(number_str.replace("X", digit))
@@ -45,5 +46,5 @@ while True:
                         not_prime_count += 1
                 if len(primes) == 8:
                     print("Solution : " + str(primes[0]))
-                    #print(number_str)
-                    #print(primes)
+                    # print(number_str)
+                    # print(primes)

@@ -1,5 +1,6 @@
 from sympy.ntheory import divisor_count
 
+
 def algo():
     n = 1
     while True:

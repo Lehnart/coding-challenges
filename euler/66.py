@@ -54,11 +54,11 @@ for d in range(2, 1001):
 
     x = x0
     y = y0
-    while True :
-        if x**2 - d*y**2 == 1 :
+    while True:
+        if x ** 2 - d * y ** 2 == 1:
             break
-        x1 = (x0*x) + (d*y0*y)
-        y1 = (x0*y) + (y0*x)
+        x1 = (x0 * x) + (d * y0 * y)
+        y1 = (x0 * y) + (y0 * x)
         x = x1
         y = y1
 

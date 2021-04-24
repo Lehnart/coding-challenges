@@ -1,7 +1,7 @@
-f = open("triangle.txt","r")
+f = open("triangle.txt", "r")
 triangle = []
-for line in f :
-    triangle.append([ int(c) for c in line.split(" ")])
+for line in f:
+    triangle.append([int(c) for c in line.split(" ")])
 
 travel_distance = []
 for line in triangle[::-1]:

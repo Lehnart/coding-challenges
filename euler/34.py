@@ -1,7 +1,7 @@
 from math import factorial
 
 solution = 0
-for n in range(3, 9999999): # 9999999> 9! * 7
+for n in range(3, 9999999):  # 9999999> 9! * 7
     fact_sum = 0
     for c in str(n):
         fact_sum += factorial(int(c))

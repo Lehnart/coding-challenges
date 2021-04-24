@@ -22,7 +22,6 @@ while True:
         print("Solution : " + str(n))
         os._exit(1)
 
-
     n += 2
-    while isprime(n) :
-        n+=2
+    while isprime(n):
+        n += 2

@@ -1,9 +1,9 @@
 from math import sqrt
 
 count = 0
-for n in range (2,10001) :
+for n in range(2, 10001):
 
-    if sqrt(n) == int(sqrt(n)) :
+    if sqrt(n) == int(sqrt(n)):
         continue
 
     a0 = int(sqrt(n))
@@ -29,11 +29,11 @@ for n in range (2,10001) :
         c = (a * den) - prev_c
         cs.append(c)
 
-        if (b,c) in b_c_seen :
+        if (b, c) in b_c_seen:
             break
-        b_c_seen.append((b,c))
+        b_c_seen.append((b, c))
 
-    if len(b_c_seen) % 2 == 1 :
+    if len(b_c_seen) % 2 == 1:
         count += 1
 
 print("Solution :" + str(count))

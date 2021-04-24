@@ -1,5 +1,6 @@
 from sympy.ntheory import factorint
 
+
 def algo():
     # Determine all the required prime factors to have a multiple of all integers in range (1,20)
     n = 1

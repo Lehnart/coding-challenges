@@ -1,9 +1,9 @@
 import os
-from bisect import bisect, bisect_left
+from bisect import bisect_left
 
 from sympy import sieve
 
-primes = [p for p in sieve.primerange(1,100)]
+primes = [p for p in sieve.primerange(1, 100)]
 
 for p in primes:
     target = p
@@ -13,6 +13,6 @@ for p in primes:
         for j in range(prime, target + 1):
             ways[j] += ways[j - prime]
 
-    if ways[-1] >= 5000 :
+    if ways[-1] >= 5000:
         print("Solution :" + str(target))
         os._exit(0)

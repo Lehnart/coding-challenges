@@ -4,7 +4,7 @@ digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 n_circles = 5
 solutions = []
 
-for som in [13,14,15,16,17,18,19,20]:
+for som in [13, 14, 15, 16, 17, 18, 19, 20]:
     for combination in combinations(digits, n_circles):
         other_digits = [d for d in digits if d not in combination]
         for circle_permutation in permutations(combination, n_circles):
@@ -28,7 +28,7 @@ for som in [13,14,15,16,17,18,19,20]:
 
 max = 0
 for solution in solutions:
-#    print(solution)
+    #    print(solution)
     string = ""
     for group in solution:
         string += "".join([str(d) for d in group])

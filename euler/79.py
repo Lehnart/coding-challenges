@@ -1,5 +1,4 @@
 import os
-from itertools import product
 
 keylog_file = open("keylog.txt", 'r')
 
@@ -13,7 +12,7 @@ for line in keylog_file:
     line = line.strip()
     digit_1, digit_2, digit_3 = line
 
-    if len(next_possibilities) == 0 :
+    if len(next_possibilities) == 0:
         print("No solution with template " + "".join(code_template))
         os._exit(0)
 
@@ -42,4 +41,4 @@ for line in keylog_file:
                 next_template[position[2]] = digit_3
                 next_possibilities.append(next_template)
 
-print("Solution : " + "".join(next_possibilities[0]) )
+print("Solution : " + "".join(next_possibilities[0]))

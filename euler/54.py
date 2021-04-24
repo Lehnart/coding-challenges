@@ -375,6 +375,7 @@ class PokerHand:
         def _get_highest_rank(self, card_ranks):
             return max([self._evaluate_rank(rank) for rank in card_ranks])
 
+
 poker_file = open("poker.txt", 'r')
 poker_list = poker_file.readlines()
 hand_1_win_count = 0
@@ -388,11 +389,11 @@ for hands_str in poker_list:
     hand1 = PokerHand.from_string(hand1_str)
     hand2 = PokerHand.from_string(hand2_str)
 
-    if hand1.evaluation.rank not in hand1_ranks :
-        hand1_ranks[hand1.evaluation.rank]= 0
+    if hand1.evaluation.rank not in hand1_ranks:
+        hand1_ranks[hand1.evaluation.rank] = 0
     if hand2.evaluation.rank not in hand2_ranks:
         hand2_ranks[hand2.evaluation.rank] = 0
-    hand1_ranks[hand1.evaluation.rank] +=1
+    hand1_ranks[hand1.evaluation.rank] += 1
     hand2_ranks[hand2.evaluation.rank] += 1
 
     if PokerHand.compare(hand1, hand2) == 1:

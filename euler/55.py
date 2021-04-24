@@ -20,6 +20,6 @@ for n in range(0, 10001):
 
     if is_lychrel:
         count += 1
-        #print(str(n) + " is a lychrel number")
+        # print(str(n) + " is a lychrel number")
 
 print("Solution : " + str(count))

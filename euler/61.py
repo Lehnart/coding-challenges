@@ -100,13 +100,13 @@ for permutation in permutations(lists, 6):
         good_numbers = next_good_numbers(good_numbers, l[1])
 
     new_good_numbers = []
-    for good_number in good_numbers :
+    for good_number in good_numbers:
         if str(good_number[0])[2:] == str(good_number[1][0])[:2]:
             new_good_numbers.append(good_number)
     good_numbers = new_good_numbers
 
-    if len(good_numbers) > 0 :
-        all_numbers = [ n for n in good_numbers[0][1]]
+    if len(good_numbers) > 0:
+        all_numbers = [n for n in good_numbers[0][1]]
         print(all_numbers)
         print("Solution :" + str(sum(all_numbers)))
         os._exit(0)

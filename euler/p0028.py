@@ -59,4 +59,4 @@ def algo():
     for i in range(size):
         solution += spiral[i, i]
         solution += spiral[size - i - 1, i]
-    return solution-1
+    return solution - 1

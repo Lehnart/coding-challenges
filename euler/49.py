@@ -10,7 +10,7 @@ def is_perm(a, b):
     chars_b.sort()
     perm_b = "".join(chars_b)
 
-    if perm_a == perm_b :
+    if perm_a == perm_b:
         return True
 
     return False

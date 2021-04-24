@@ -1,5 +1,6 @@
 from math import factorial
 
+
 def algo():
     n_str = str(factorial(100))
     solution = 0

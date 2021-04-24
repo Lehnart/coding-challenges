@@ -1,7 +1,7 @@
 def algo():
     sequence_length = 0
-    for i in range(2,1000):
-        found_remainders = [0]*i
+    for i in range(2, 1000):
+        found_remainders = [0] * i
         value = 1
         position = 0
         while found_remainders[value] == 0 and value != 0:

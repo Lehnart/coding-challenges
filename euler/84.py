@@ -185,5 +185,5 @@ for p1, p2 in monop.get_probabilities():
     print("i : " + str(p1) + ", proba : " + str(p2 * 100))
 
 probas = monop.get_probabilities()
-probas.sort(key=lambda r: r[1],reverse=True)
-print("Solution : " + str(probas[0][0][-2:])+ str(probas[1][0][-2:])+ str(probas[2][0][-2:]))
+probas.sort(key=lambda r: r[1], reverse=True)
+print("Solution : " + str(probas[0][0][-2:]) + str(probas[1][0][-2:]) + str(probas[2][0][-2:]))
