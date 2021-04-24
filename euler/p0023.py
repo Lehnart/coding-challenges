@@ -1,6 +1,7 @@
-import numpy
+import ctypes
+
 from sympy.ntheory import divisors
-import numpy as np
+
 
 def is_abundant(n):
     if sum(divisors(n)[:-1]) > n:
@@ -9,27 +10,24 @@ def is_abundant(n):
 
 
 def algo():
-    is_abundant_sum = [False] * 28123
     # Find all abundants number below 28123
+    n_max = 28123
     abundants = []
     for n in range(28123):
         if is_abundant(n):
             abundants.append(n)
 
-    # Find all pair of abundant numbers
-    for i in range(len(abundants)):
-        for j in range(i, len(abundants)):
-            s = abundants[i] + abundants[j]
-            if s >= 28123:
-                break
-            is_abundant_sum[s] = True
+    libc = ctypes.cdll.LoadLibrary("./p0023.so")
+    abundant_array_type = ctypes.c_long * len(abundants)
+    abundant_array = abundant_array_type(*abundants)
+    abundant_size = ctypes.c_int(len(abundants))
 
-    # Find integer that can t be written as the sum of 2 abundant numbers
-    solution = 0
-    for n in range(28123):
-        if not is_abundant_sum[n]:
-            solution += n
-    return solution
+    sum_size = ctypes.c_int(n_max)
+    sum_array_type = ctypes.c_int * n_max
+    sum_array = sum_array_type()
+    s = libc.compute(abundant_array, abundant_size, sum_array, sum_size)
+
+    return s
 
 
 if __name__ == "__main__":
