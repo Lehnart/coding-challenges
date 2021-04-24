@@ -21,7 +21,6 @@ def algo():
     abundant_array_type = ctypes.c_long * len(abundants)
     abundant_array = abundant_array_type(*abundants)
     abundant_size = ctypes.c_int(len(abundants))
-
     sum_size = ctypes.c_int(n_max)
     sum_array_type = ctypes.c_int * n_max
     sum_array = sum_array_type()

@@ -52,10 +52,11 @@ def build_spiral(size):
     return grid
 
 
-size = 1001
-spiral = build_spiral(size)
-solution = 0
-for i in range(size):
-    solution += spiral[i, i]
-    solution += spiral[size - i - 1, i]
-print("Solution : " + str(solution-1))
+def algo():
+    size = 1001
+    spiral = build_spiral(size)
+    solution = 0
+    for i in range(size):
+        solution += spiral[i, i]
+        solution += spiral[size - i - 1, i]
+    return solution-1

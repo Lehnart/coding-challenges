@@ -12,4 +12,5 @@ def algo():
         solution += index * score
         index += 1
 
+    names_file.close()
     return solution
