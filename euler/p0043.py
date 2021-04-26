@@ -1,6 +1,3 @@
-from itertools import permutations
-
-
 def hasproperty(d1, d2, d3, divisor):
     return int(d1 + d2 + d3) % divisor == 0
 
@@ -22,7 +19,7 @@ def algo():
                     if d3 in permutation_str[:3]: continue
                     permutation_str[3] = d3
                     if not hasproperty(d1, d2, d3, divisors[0]): continue
-                    for d4 in digits :
+                    for d4 in digits:
                         if d4 in permutation_str[:4]: continue
                         permutation_str[4] = d4
                         if not hasproperty(d2, d3, d4, divisors[1]): continue
@@ -46,9 +43,10 @@ def algo():
                                             if d9 in permutation_str[:9]: continue
                                             permutation_str[9] = d9
                                             if not hasproperty(d7, d8, d9, divisors[6]): continue
-                                            n = int(d0+d1+d2+d3+d4+d5+d6+d7+d8+d9)
+                                            n = int(d0 + d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9)
                                             solution += n
     return solution
+
 
 if __name__ == "__main__":
     import cProfile
