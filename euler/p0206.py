@@ -1,3 +1,6 @@
+import math
+
+
 def algo():
     n = 1010101030
     step = 60
@@ -6,6 +9,8 @@ def algo():
         n += step
         n_str = str(n * n)
         if n_str[2] != "2":
+            if n_str[2] == "3" :
+                n += int((math.sqrt( (4*n*n) + (4*9*10**16)) -2*n)/2)//100*100
             continue
         if n_str[4] != "3":
             continue
