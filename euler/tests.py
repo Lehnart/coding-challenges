@@ -2,7 +2,8 @@ import unittest
 
 from euler import p0001, p0002, p0003, p0004, p0005, p0006, p0007, p0008, p0009, p0010, p0011, p0012, p0013, p0014, \
     p0015, p0016, p0017, p0018, p0019, p0020, p0021, p0022, p0023, p0024, p0025, p0026, p0027, p0028, p0029, p0030, p0031, p0032, p0033, p0034, p0035, \
-    p0036, p0037, p0038, p0039, p0040, p0041, p0042, p0043
+    p0036, p0037, p0038, p0039, p0040, p0041, p0042, p0043, p0044, p0045, p0046, p0047, p0048, p0049, p0050, p0052, p0053, p0055, p0056, p0057, p0058, \
+    p0059, p0063, p0079, p0067
 
 
 class TestEuler(unittest.TestCase):
@@ -135,3 +136,54 @@ class TestEuler(unittest.TestCase):
 
     def test_0043(self):
         self.assertEqual(p0043.algo(), 16695334890)
+
+    def test_0044(self):
+        self.assertEqual(p0044.algo(), 5482660)
+
+    def test_0045(self):
+        self.assertEqual(p0045.algo(), 1533776805)
+
+    def test_0046(self):
+        self.assertEqual(p0046.algo(), 5777)
+
+    def test_0047(self):
+        self.assertEqual(p0047.algo(), 134043)
+
+    def test_0048(self):
+        self.assertEqual(p0048.algo(), 9110846700)
+
+    def test_0049(self):
+        self.assertEqual(p0049.algo(), 296962999629)
+
+    def test_0050(self):
+        self.assertEqual(p0050.algo(), 997651)
+
+    def test_0052(self):
+        self.assertEqual(p0052.algo(), 142857)
+
+    def test_0053(self):
+        self.assertEqual(p0053.algo(), 4075)
+
+    def test_0055(self):
+        self.assertEqual(p0055.algo(), 249)
+
+    def test_0056(self):
+        self.assertEqual(p0056.algo(), 972)
+
+    def test_0057(self):
+        self.assertEqual(p0057.algo(), 153)
+
+    def test_0058(self):
+        self.assertEqual(p0058.algo(), 26241)
+
+    def test_0059(self):
+        self.assertEqual(p0059.algo(), 129448)
+
+    def test_0063(self):
+        self.assertEqual(p0063.algo(), 49)
+
+    def test_0067(self):
+        self.assertEqual(p0067.algo(), 7273)
+
+    def test_0079(self):
+        self.assertEqual(p0079.algo(), 73162890)

@@ -35,9 +35,8 @@ def is_hexagonal(n):
 def hexagonal(n):
     return n * (2 * n - 1)
 
-
-for i in range(144, 1000000):
-    n = hexagonal(i)
-    if is_pentagonal(n) and is_hexagonal(n) and is_triangle(n):
-        print("Solution : " + str(n))
-        os._exit(1)
+def algo():
+    for i in range(144, 1000000):
+        n = hexagonal(i)
+        if is_pentagonal(n) and is_hexagonal(n) and is_triangle(n):
+            return n
