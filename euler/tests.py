@@ -3,7 +3,7 @@ import unittest
 from euler import p0001, p0002, p0003, p0004, p0005, p0006, p0007, p0008, p0009, p0010, p0011, p0012, p0013, p0014, \
     p0015, p0016, p0017, p0018, p0019, p0020, p0021, p0022, p0023, p0024, p0025, p0026, p0027, p0028, p0029, p0030, p0031, p0032, p0033, p0034, p0035, \
     p0036, p0037, p0038, p0039, p0040, p0041, p0042, p0043, p0044, p0045, p0046, p0047, p0048, p0049, p0050, p0052, p0053, p0055, p0056, p0057, p0058, \
-    p0059, p0063, p0079, p0067, p0092
+    p0059, p0063, p0079, p0067, p0092, p0097, p0206
 
 
 class TestEuler(unittest.TestCase):
@@ -190,4 +190,10 @@ class TestEuler(unittest.TestCase):
 
     def test_0092(self):
         self.assertEqual(p0092.algo(), 8581146)
+
+    def test_0097(self):
+        self.assertEqual(p0097.algo(), 8739992577)
+
+    def test_0206(self):
+        self.assertEqual(p0206.algo(), 1389019170)
 
