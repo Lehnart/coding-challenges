@@ -2,7 +2,7 @@ def is_pythagorean_triplet(a: int, b: int, c: int) -> bool:
     return a ** 2 + b ** 2 == c ** 2
 
 
-def algo(s: int = 1000):
+def p0009(s: int = 1000):
     for a in range(1, s):
         for b in range((s // 2) - a, s):
             for c in range(b, (s // 2)):

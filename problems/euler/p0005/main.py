@@ -1,21 +1,24 @@
 from sympy.ntheory import factorint
 
 
-def algo():
-    # Determine all the required prime factors to have a multiple of all integers in range (1,20)
-    n = 1
-    expected_divisors = range(1, 21)
-    factors_dict = {}
-    for n in expected_divisors:
-        n_factors_dict = factorint(n)
-        for n_factor in n_factors_dict.keys():
-            if n_factor not in factors_dict.keys() or factors_dict[n_factor] < n_factors_dict[n_factor]:
-                factors_dict[n_factor] = n_factors_dict[n_factor]
+def p0005():
+    # The idea is to construct a number composed of each prime factor and their multiplicity so it will
+    # be divisible by each number from 1 to 20.
+    prime_factor_multiplicity = {}
+    for n in range(1, 20 + 1):
+        n_prime_factor_multiplicity = factorint(n)
+        for prime_factor in n_prime_factor_multiplicity.keys():
+            if prime_factor not in prime_factor_multiplicity.keys():
+                prime_factor_multiplicity[prime_factor] = n_prime_factor_multiplicity[prime_factor]
+            else:
+                prime_factor_multiplicity[prime_factor] = max(
+                    prime_factor_multiplicity[prime_factor],
+                    n_prime_factor_multiplicity[prime_factor]
+                )
 
-    # Compute the solution
+    # Build the number by multiplying each prime factor
     solution = 1
-    for factor in factors_dict.keys():
-        for i in range(0, factors_dict[factor]):
-            solution *= factor
+    for factor in prime_factor_multiplicity.keys():
+        solution *= factor ** (prime_factor_multiplicity[factor])
 
     return solution

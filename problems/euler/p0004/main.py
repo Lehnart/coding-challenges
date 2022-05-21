@@ -1,5 +1,7 @@
-def algo():
+def p0004():
     max_palindrome_int = 0
+
+    # We will build every 3 digit numbers and check each product.
     for n1 in range(100, 1000):
 
         # If n1 are multiple of 10, product will end by 0 and it won't be a palindrom

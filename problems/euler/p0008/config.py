@@ -1,4 +1,4 @@
-number_str = "\
+NUMBER = "\
 73167176531330624919225119674426574742355349194934\
 96983520312774506326239578318016984801869478851843\
 85861560789112949495459501737958331952853208805511\
@@ -20,15 +20,3 @@ number_str = "\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450\
 "
-
-
-def algo():
-    solution = 0
-    for index_str in range(len(number_str)):
-        if index_str + 13 >= len(number_str):
-            continue
-        temp = 1
-        for digit in number_str[index_str:index_str + 13]:
-            temp *= int(digit)
-        solution = (temp if temp > solution else solution)
-    return solution
