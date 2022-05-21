@@ -1,6 +1,6 @@
 from bisect import bisect_left
 
-from euler.primes import primes_below
+from problems.euler.primes import primes_below
 
 primes = primes_below(1000000)
 

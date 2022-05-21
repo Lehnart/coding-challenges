@@ -1,4 +1,4 @@
-from euler.primes import primes_below
+from problems.euler.primes import primes_below
 
 
 def algo():

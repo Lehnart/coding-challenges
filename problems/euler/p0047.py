@@ -2,7 +2,7 @@ from bisect import bisect_left
 
 from sympy.ntheory import primefactors
 
-from euler.primes import primes_below
+from problems.euler.primes import primes_below
 
 PRIMES = primes_below(150000)
 
