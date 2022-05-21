@@ -15,7 +15,8 @@ def p0011(grid_file_name: str):
     solution = 0
 
     # transform grids tr in int numpy array
-    grid_str = "".join(open(grid_file_name,"r").readlines())
+    with open(grid_file_name,"r") as f :
+       grid_str = "".join(f.readlines())
     grid_list = [[int(n) for n in line.split(" ")] for line in grid_str.split('\n')]
     grid_array = np.array(grid_list)
 
