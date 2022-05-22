@@ -8,7 +8,7 @@ def is_amicable(n):
     return False
 
 
-def algo():
+def p0021():
     solution = 0
     for n in range(10000):
         if is_amicable(n):

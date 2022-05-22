@@ -1,7 +1,7 @@
 import datetime
 
 
-def algo():
+def p0019():
     solution = 0
     for year in range(1901, 2000 + 1):
         for month in range(1, 12 + 1):

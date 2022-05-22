@@ -1,4 +1,4 @@
-def algo():
+def p0025():
     current = 2
     prev = 1
     index = 3
