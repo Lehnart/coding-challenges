@@ -1,5 +1,7 @@
 import math
 
+from common.tools import split
+
 
 def is_ok(n, objective):
     if n == objective:
@@ -30,7 +32,14 @@ def is_S_number(n):
     return 0
 
 
+def sum_s_numbers(squares):
+    return sum(is_S_number(n) for n in squares)
+
+
 def p0719(n_max: int):
     squares = [n ** 2 for n in range(4, int(math.sqrt(n_max)) + 1)]
-    s = sum(is_S_number(n) for n in squares)
-    return s
+    import multiprocessing as mp
+    pool = mp.Pool(mp.cpu_count())
+    results = pool.map(sum_s_numbers, split(squares, mp.cpu_count()))
+    pool.close()
+    return sum(results)
