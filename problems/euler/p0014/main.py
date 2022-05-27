@@ -15,7 +15,7 @@ def chain(n0):
         chain_length_dict[n0] = n
         return n
 
-    n = 2 + chain(((3 * n0) + 1)//2)
+    n = 2 + chain(((3 * n0) + 1) // 2)
     chain_length_dict[n0] = n
     return n
 

@@ -2,6 +2,7 @@ from itertools import permutations
 
 from sympy.ntheory import isprime
 
+
 def algo():
     solution = 2
 

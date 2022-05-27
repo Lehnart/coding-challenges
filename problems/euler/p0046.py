@@ -1,6 +1,5 @@
-import os
-
 from sympy.ntheory import isprime
+
 
 def algo():
     n = 5

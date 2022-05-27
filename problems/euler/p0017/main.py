@@ -1,5 +1,6 @@
 from num2words import num2words
 
+
 def p0017():
     solution = 0
     for n in range(1, 1000 + 1):

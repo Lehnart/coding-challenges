@@ -1,6 +1,7 @@
 from scipy.special import comb
 
-def algo() :
+
+def algo():
     count = 0
     for n in range(0, 101):
         for k in range(0, n):

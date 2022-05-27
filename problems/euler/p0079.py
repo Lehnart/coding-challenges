@@ -1,5 +1,3 @@
-import os
-
 def algo():
     keylog_file = open("p0079_keylog.txt", 'r')
     code_template = ["X"] * 8

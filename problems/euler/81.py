@@ -33,6 +33,7 @@ for i in range(len(matrix) - 1, -1, -1):
             min_sum_path_matrix[i][j] = candidate
 
         else:
-            min_sum_path_matrix[i][j] = min_sum_path_matrix[i][j] if candidate > min_sum_path_matrix[i][j] else candidate
+            min_sum_path_matrix[i][j] = min_sum_path_matrix[i][j] if candidate > min_sum_path_matrix[i][
+                j] else candidate
 
 print("Solution :" + str(min_sum_path_matrix[0][0]))

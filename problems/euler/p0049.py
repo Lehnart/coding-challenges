@@ -15,6 +15,7 @@ def is_perm(a, b):
 
     return False
 
+
 def algo():
     n, f = 1487, 1  # start search with prime from description
     while True:

@@ -1,7 +1,10 @@
 from bisect import bisect_left
+
 from problems.euler.primes import primes_below
 
 primes = primes_below(1000000)
+
+
 def is_prime(n):
     if n in [2, 3, 5]:
         return True
@@ -13,6 +16,7 @@ def is_prime(n):
         return True
     else:
         return False
+
 
 def algo():
     n = 9
@@ -34,6 +38,7 @@ def algo():
             truncable_primes.append(n)
 
     return sum(truncable_primes)
+
 
 if __name__ == "__main__":
     import cProfile

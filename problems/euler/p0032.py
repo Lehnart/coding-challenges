@@ -1,5 +1,4 @@
 import ctypes
-import datetime
 from itertools import permutations
 
 digits = '123456789'
@@ -23,4 +22,3 @@ if __name__ == "__main__":
     import cProfile
 
     cProfile.run("algo()")
-

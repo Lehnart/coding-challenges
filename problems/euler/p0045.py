@@ -1,4 +1,3 @@
-import os
 from math import sqrt
 
 
@@ -34,6 +33,7 @@ def is_hexagonal(n):
 
 def hexagonal(n):
     return n * (2 * n - 1)
+
 
 def algo():
     for i in range(144, 1000000):

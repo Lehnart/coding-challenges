@@ -4,6 +4,7 @@ from problems.euler.primes import primes_below
 
 primes = primes_below(1000000)
 
+
 def is_prime(n):
     if n in [2, 3, 5]:
         return True
@@ -16,6 +17,7 @@ def is_prime(n):
     else:
         return False
 
+
 def algo():
     max_consecutive = 0
     max_prime = 2
@@ -24,7 +26,7 @@ def algo():
         index = 1
         n = primes[i]
         while n < 1000000:
-            if i+index >= len(primes):
+            if i + index >= len(primes):
                 break
             n += primes[i + index]
             if is_prime(n) and index + 1 > max_consecutive:
@@ -33,6 +35,7 @@ def algo():
             index += 1
 
     return max_prime
+
 
 if __name__ == "__main__":
     import cProfile

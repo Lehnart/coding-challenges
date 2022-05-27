@@ -1,5 +1,6 @@
 from math import sqrt
 
+
 def algo():
     solution = 0
     max_solution_count = 0
