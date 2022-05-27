@@ -52,7 +52,7 @@ def build_spiral(size):
     return grid
 
 
-def algo():
+def p0028():
     size = 1001
     spiral = build_spiral(size)
     solution = 0

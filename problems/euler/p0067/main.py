@@ -1,5 +1,5 @@
-def algo():
-    f = open("p0067_triangle.txt", "r")
+def p0067(filepath: str):
+    f = open(filepath, "r")
     triangle = []
     for line in f:
         triangle.append([int(c) for c in line.split(" ")])
