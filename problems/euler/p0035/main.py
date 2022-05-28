@@ -4,7 +4,6 @@ from problems.euler.primes import primes_below
 
 primes = primes_below(1000000)
 
-
 def is_prime(n):
     if n in [2, 3, 5]:
         return True
@@ -24,7 +23,7 @@ def circular_permutations(number_string):
         yield [number_string[(i + j) % l] for j in range(0, l)]
 
 
-def algo():
+def p0035():
     circular_primes = {2, 3, 5, 7}
     pairs = ["0", "2", "4", "6", "8"]
     for n in range(11, 1000000, 2):
@@ -42,9 +41,3 @@ def algo():
                 circular_primes.add(int("".join(permutation)))
 
     return len(circular_primes)
-
-
-if __name__ == "__main__":
-    import cProfile
-
-    cProfile.run("algo()")

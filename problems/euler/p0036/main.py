@@ -1,4 +1,4 @@
-def algo():
+def p0036():
     solution = 0
     for n in range(1, 1000000, 2):
         bin_n_str = str(bin(n))[2:]

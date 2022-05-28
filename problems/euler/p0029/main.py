@@ -1,4 +1,4 @@
-def algo():
+def p0029():
     distinct_numbers = set()
     for a in range(2, 101):
         for b in range(2, 101):

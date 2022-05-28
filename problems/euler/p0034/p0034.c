@@ -9,7 +9,7 @@ long compute(){
     long solution =0;
     for(long n=3;n<10000000;n++){
         long fact_sum = 0;
-        int ret = snprintf(buffer, sizeof(buffer), "%I64d", n);
+        int ret = snprintf(buffer, sizeof(buffer), "%ld", n);
         int i = 0;
         while(buffer[i] != '\0'){
             fact_sum += fact( (long)(buffer[i] - '0'));
